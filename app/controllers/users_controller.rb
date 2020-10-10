@@ -40,6 +40,7 @@ before_action :set_user, only: [:show, :edit, :update, :favorites]
 
 
  private
+  
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation,
