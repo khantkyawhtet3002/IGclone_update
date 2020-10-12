@@ -38,7 +38,6 @@ before_action :set_user, only: [:show, :edit, :update, :favorites]
     @favorites = Favorite.where(user_id: @user.id)
   end
 
-
  private
  def user_params
    params.require(:user).permit(:name, :email, :password,
